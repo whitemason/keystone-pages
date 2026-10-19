@@ -23,3 +23,7 @@ npm run build    # 빌드(커밋 전에 경고 없이 성공해야 해요)
 - App Store · TestFlight 링크는 `src/consts.ts`의 `APP_STORE_URL` · `TESTFLIGHT_URL`에서 바꿔요. 둘 다 비어 있으면 "App Store 출시 준비 중"이 보여요.
 - 디자인 토큰(`src/styles/tokens.css`)은 casebook-pages에서 가져왔어요. 그쪽 토큰이 바뀌면 함께 맞춰요.
 - 홈의 앱 화면 그림은 실제 App Store Connect 화면 캡처가 아니라 HTML로 그린 그림이에요. 계정 정보가 보이는 캡처를 넣지 않아요.
+
+## 라이선스
+
+코드는 MIT 라이선스(LICENSE)를 따릅니다. 로고 · 로고 애니메이션 · 워드마크 · 앱 아이콘 · 그림과 글은 Whitemason의 저작물로 MIT 라이선스에 포함되지 않으며, 모든 권리를 보유합니다(All rights reserved). (`src/assets/images/`의 Keystone 워드마크 · Whitemason 로고, `public/favicon.svg`, 홈의 소개 글과 `src/pages/privacy.astro`의 개인정보 처리방침 글이 여기에 해당해요.)
