@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import wordmark from '../assets/images/keystone-wordmark.png';
 import logo from '../assets/images/whitemason-logo.png';
-import { APP_STORE_URL, CASEBOOK_URL, url } from '../consts';
+import { APP_STORE_URL, CASEBOOK_URL, TESTFLIGHT_URL, url } from '../consts';
 
 // 앱이 실제로 다루는 항목(README의 화면과 API 표)만 적는다.
 const features = [
@@ -54,7 +54,12 @@ const checklist = [
       <p class="lede">App Store Connect의 심사 항목을 App Store 페이지 모양 그대로 보면서 채우세요. 서버 없이 기기에서 Apple과 바로 통신하고, API 키는 이 기기를 떠나지 않아요.</p>
       <div class="cta">
         {APP_STORE_URL ? (
-          <a class="pill store" href={APP_STORE_URL}>App Store에서 받기</a>
+          <>
+            <a class="pill store" href={APP_STORE_URL}>App Store에서 받기</a>
+            {TESTFLIGHT_URL && <a class="link beta" href={TESTFLIGHT_URL} target="_blank" rel="noopener">TestFlight 공개 베타 참여 ›</a>}
+          </>
+        ) : TESTFLIGHT_URL ? (
+          <a class="pill store" href={TESTFLIGHT_URL} target="_blank" rel="noopener">베타 체험하기 (TestFlight)</a>
         ) : (
           <span class="soon">App Store 출시 준비 중</span>
         )}
@@ -234,6 +239,7 @@ const checklist = [
   }
   .link { display: block; padding: 10px 0; font-size: 17px; line-height: 1.24; color: var(--dark-link); text-decoration: none; }
   .link:hover { color: var(--dark-fg); }
+  .beta { margin-top: 4px; }
   .platforms { margin: 8px 0 0; font-size: 14px; line-height: 1.3; color: var(--dark-muted); }
   .more-link { margin-top: 12px; }
 

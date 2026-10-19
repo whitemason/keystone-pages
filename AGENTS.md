@@ -2,8 +2,8 @@
 
 Keystone 앱(번들 ID `com.whitemason.keystone.app`)의 웹사이트예요. 홈과 개인정보 처리방침이 있어요.
 
-- 사이트(예정): https://keystone.whitemason.club/
-- 저장소(예정): whitemason/keystone-pages
+- 사이트: https://keystone.whitemason.club/
+- 저장소: whitemason/keystone-pages
 - 앱 코드는 다른 저장소(whitemason-appstoreconnect-appleos)예요. 여기서 고치지 않아요.
 - 디자인은 Casebook 문서 사이트(whitemason/casebook-pages)와 같아요. 디자인 토큰(`src/styles/tokens.css`)이 그쪽에서 바뀌면 함께 맞춰요.
 
@@ -23,7 +23,7 @@ Keystone 앱(번들 ID `com.whitemason.keystone.app`)의 웹사이트예요. 홈
 |---|---|
 | `src/pages/` | 홈(`index.astro`), 처리방침(`privacy.astro`), 404 |
 | `src/layouts/` · `src/components/` · `src/styles/` | 레이아웃 · 부품 · 디자인 토큰 |
-| `src/consts.ts` | 주소 도우미 `url()`, `APP_STORE_URL` |
+| `src/consts.ts` | 주소 도우미 `url()`, `APP_STORE_URL` · `TESTFLIGHT_URL` |
 | `src/assets/images/` | Keystone 워드마크 · Whitemason 로고(앱 에셋의 사본, 흰색 템플릿 이미지) |
 
 ## 바꾸면 안 되는 것
