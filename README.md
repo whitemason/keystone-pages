@@ -20,7 +20,7 @@ npm run build    # 빌드(커밋 전에 경고 없이 성공해야 해요)
 - `privacy.html` · `/#support` 주소와 처리방침 `#p1`~`#p12` 앵커는 App Store Connect에 등록할 주소예요. 공개한 뒤에는 바꾸지 않아요(`build.format: 'preserve'`).
 - 처리방침 본문은 운영자의 승인 없이 고치지 않아요. 앱의 키 저장 · 연결 대상이 바뀌면(whitemason-appstoreconnect-appleos의 "키와 개인정보") 처리방침도 함께 고쳐요.
 - 연락처 `engineering@whitemason.club`은 처리방침 11장에만 적어요. 홈에는 이메일을 쓰지 않아요.
-- App Store · TestFlight 링크는 `src/consts.ts`의 `APP_STORE_URL` · `TESTFLIGHT_URL`에서 바꿔요. 둘 다 비어 있으면 "App Store 출시 준비 중"이 보여요.
+- App Store · TestFlight 링크는 `src/consts.ts`의 `APP_STORE_URL` · `TESTFLIGHT_URL`에서 바꿔요. 홈의 App Store 차트 순위는 `APP_STORE_CHART`(기준 날짜 포함)를 손으로 고쳐요. 둘 다 비어 있으면 "App Store 출시 준비 중"이 보여요.
 - 디자인 토큰(`src/styles/tokens.css`)은 casebook-pages에서 가져왔어요. 그쪽 토큰이 바뀌면 함께 맞춰요.
 - 홈의 앱 화면 그림은 실제 App Store Connect 화면 캡처가 아니라 HTML로 그린 그림이에요. 계정 정보가 보이는 캡처를 넣지 않아요.
 

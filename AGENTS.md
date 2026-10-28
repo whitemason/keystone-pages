@@ -23,7 +23,7 @@ Keystone 앱(번들 ID `com.whitemason.keystone.app`)의 웹사이트예요. 홈
 |---|---|
 | `src/pages/` | 홈(`index.astro`), 처리방침(`privacy.astro`), 404 |
 | `src/layouts/` · `src/components/` · `src/styles/` | 레이아웃 · 부품 · 디자인 토큰 |
-| `src/consts.ts` | 주소 도우미 `url()`, `APP_STORE_URL` · `TESTFLIGHT_URL` |
+| `src/consts.ts` | 주소 도우미 `url()`, `APP_STORE_URL` · `TESTFLIGHT_URL`, 차트 순위 `APP_STORE_CHART` |
 | `src/assets/images/` | Keystone 워드마크 · Whitemason 로고(앱 에셋의 사본, 흰색 템플릿 이미지) |
 
 ## 바꾸면 안 되는 것
